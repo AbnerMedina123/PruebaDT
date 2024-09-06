@@ -1,6 +1,9 @@
 # Usa una imagen base oficial de Node.js
 FROM node:14
 
+# Instalar pandoc
+RUN apt-get update && apt-get install -y pandoc
+
 # Establece el directorio de trabajo en la imagen Docker
 WORKDIR /app
 
